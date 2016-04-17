@@ -1,0 +1,11 @@
+.btn {
+    outline: none;
+
+    &.btn-round {
+        background-color: transparent;
+        color: #fc5a5d;
+        border-radius: 20px;
+        border: 1px solid #fc5a5d;
+        padding: 10px 20px 10px 20px;
+    }
+}

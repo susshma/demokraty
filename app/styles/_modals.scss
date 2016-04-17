@@ -1,0 +1,34 @@
+.modal.fade .modal-dialog {
+    transform: scale(0.8);
+    transition: transform 0.3s ease-out;
+}
+
+.modal.in .modal-dialog {
+    transform: scale(1.2);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #F6F6F6;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin: 40px auto;
+}
+
+.modal-dialog {
+    width: 50%;
+    margin-top: 60px;
+}
+
+.close {
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.modal-header {
+    line-height: 42px;
+    font-size: 25px;
+    color: #fc5a5d;
+    text-align: center;
+}
