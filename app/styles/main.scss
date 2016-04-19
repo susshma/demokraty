@@ -124,16 +124,17 @@ body {
 
         .question {
             font-size: 20px;
+            border-bottom: #EEEEEE solid 1px;
 
-            &:after {
-                content: " ";
-                width: 30px;
-                height: 2px;
-                background: #ee2c40;
-                position: absolute;
-                bottom: -4px;
-                left: 15px;
-            }
+            // &:after {
+            //     content: " ";
+            //     width: 30px;
+            //     height: 2px;
+            //     background: #ee2c40;
+            //     position: absolute;
+            //     bottom: -4px;
+            //     left: 15px;
+            // }
         }
 
         .stats {
@@ -149,8 +150,9 @@ body {
             }
 
             h4 {
-                font-size: 28px;
+                font-size: 48px;
                 color: #1fc3b4;
+                font-weight: bold;
             }
         }
     }

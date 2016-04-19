@@ -9,7 +9,20 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Firebase -->
+        <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+         <script src="https://fb.me/react-0.14.7.min.js"></script>
+
+        <!-- ReactFire -->
+        <script src="https://cdn.firebase.com/libs/reactfire/0.6.0/reactfire.min.js"></script>
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <!-- throw-in-the-towel -->
+       <!-- <script src="https://npmcdn.com/throw-in-the-towel@2"></script> -->
+
+       <!-- Markdown -->
+       <!-- <script src="https://npmcdn.com/showdown@0.3.1"></script> -->
 
         <link rel="stylesheet" href="styles/main.css">
 
@@ -21,6 +34,8 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <div id="container">
+        </div>
 
         <div class="container">
             <div class="header">
@@ -35,11 +50,7 @@
                 <h3 class="logo"></h3>
             </div>
 
-            <!-- <div class="jumbotron" id="app">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-            </div> -->
+            <div id="react_content"></div>
 
             <div id="content" class="row marketing">
                 <div class="col-lg-12">
@@ -50,7 +61,7 @@
                         </div>
                     </div>
 
-                    <div class="row add-margin">
+                    <div class="row add-margin" id="poll_details">
                         <div class="col-xs-12 col-md-6 col-lg-6">
                             <div class="box">
                                 <div class="content">
@@ -62,126 +73,6 @@
                                     <div class="col-lg-8">
                                         <div class="question">
                                             What is the most popular frontend framework ?
-                                        </div>
-                                        <div class="stats">
-                                            <h4>235</h4>
-                                            <p>Option 1</p>
-                                        </div>
-                                        <div class="stats">
-                                            <h4>235</h4>
-                                            <p>Option 2</p>
-                                        </div>
-                                        <div class="stats">
-                                            <h4>235</h4>
-                                            <p>Option 3</p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="footer">
-                                    <hr/>
-                                    Created By: This person<br/>
-                                    Status:
-                                    <span class="green">
-                                        <i class="fa fa-check " aria-hidden="true"></i>
-                                    </span>
-                                    Active
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-md-6 col-lg-6">
-                            <div class="box">
-                                <div class="content">
-                                    <div class="col-lg-4">
-                                        <div class="full-circle">
-                                            <p class="vote">10000 votes</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div class="question">
-                                            What is the most popular frontend framework
-                                            <i class="fa fa-question"></i>
-                                        </div>
-                                        <div class="stats">
-                                            <h4>235</h4>
-                                            <p>Option 1</p>
-                                        </div>
-                                        <div class="stats">
-                                            <h4>235</h4>
-                                            <p>Option 2</p>
-                                        </div>
-                                        <div class="stats">
-                                            <h4>235</h4>
-                                            <p>Option 3</p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="footer">
-                                    <hr/>
-                                    Created By: This person<br/>
-                                    Status:
-                                    <span class="green">
-                                        <i class="fa fa-check " aria-hidden="true"></i>
-                                    </span>
-                                    Active
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-md-6 col-lg-6">
-                            <div class="box">
-                                <div class="content">
-                                    <div class="col-lg-4">
-                                        <div class="full-circle">
-                                            <p class="vote">10000 votes</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div class="question">
-                                            What is the most popular frontend framework
-                                            <i class="fa fa-question"></i>
-                                        </div>
-                                        <div class="stats">
-                                            <h4>235</h4>
-                                            <p>Option 1</p>
-                                        </div>
-                                        <div class="stats">
-                                            <h4>235</h4>
-                                            <p>Option 2</p>
-                                        </div>
-                                        <div class="stats">
-                                            <h4>235</h4>
-                                            <p>Option 3</p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="footer">
-                                    <hr/>
-                                    Created By: This person<br/>
-                                    Status:
-                                    <span class="green">
-                                        <i class="fa fa-check " aria-hidden="true"></i>
-                                    </span>
-                                    Active
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-md-6 col-lg-6">
-                            <div class="box">
-                                <div class="content">
-                                    <div class="col-lg-4">
-                                        <div class="full-circle">
-                                            <p class="vote">10000 votes</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div class="question">
-                                            What is the most popular frontend framework
-                                            <i class="fa fa-question"></i>
                                         </div>
                                         <div class="stats">
                                             <h4>235</h4>
@@ -231,40 +122,40 @@
                 add new poll
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               </div>
-              <div class="modal-body">
-                  <div id="form_content">
-                      <form id="myform" class="fs-form fs-form-overview fs-show" autocomplete="off">
-                          <ol class="fs-fields">
-                              <li class="">
-                                  <span class="number">1</span>
-                                  <label class="fs-field-label fs-anim-upper" for="q1">Question?</label>
-                                  <input class="fs-anim-lower" id="q1" name="q1" type="text" >
-                              </li>
-                              <li class="">
-                                  <span class="number">2</span>
-                                  <label class="fs-field-label fs-anim-upper" for="q1">Answer options</label>
-                                  <input class="fs-anim-lower" id="q1" name="q1" type="text" >
-                                  <input class="fs-anim-lower" id="q1" name="q1" type="text" >
-                                  <input class="fs-anim-lower" id="q1" name="q1" type="text" >
-                                  <input class="fs-anim-lower" id="q1" name="q1" type="text" >
-                              </li>
-                              <li class="">
-                                  <span class="number">3</span>
-                                  <label class="fs-field-label fs-anim-upper" for="q1">Start date</label>
-                                  <input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="mm/dd/yyyy" required="">
-                              </li>
-                              <li class="">
-                                  <span class="number">4</span>
-                                  <label class="fs-field-label fs-anim-upper" for="q1">End date</label>
-                                  <input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="mm/dd/yyyy" required="">
-                              </li>
-                          </ol>
+              <div id="form_content">
+                  <form id="myform" class="fs-form fs-form-overview fs-show" autocomplete="off">
+                  <div class="modal-body">
 
-                      </form>
-                  </div>
-                </div>
-              <div class="modal-footer">
-                  <button class="btn btn-round" type="submit">Send answers</button>
+                          <!-- <form id="myform" class="fs-form fs-form-overview fs-show" autocomplete="off">
+                              <ol class="fs-fields">
+                                  <li class="">
+                                      <span class="number">1</span>
+                                      <label class="fs-field-label fs-anim-upper" for="q1">Question?</label>
+                                      <input class="fs-anim-lower" id="q1" name="q1" type="text" >
+                                  </li>
+                                  <li class="">
+                                      <span class="number">2</span>
+                                      <label class="fs-field-label fs-anim-upper" for="q1">Answer options</label>
+                                      <input class="fs-anim-lower" id="q1" name="q1" type="text" >
+                                      <input class="fs-anim-lower" id="q1" name="q1" type="text" >
+                                      <input class="fs-anim-lower" id="q1" name="q1" type="text" >
+                                      <input class="fs-anim-lower" id="q1" name="q1" type="text" >
+                                  </li>
+                                  <li class="">
+                                      <span class="number">3</span>
+                                      <label class="fs-field-label fs-anim-upper" for="q1">Start date</label>
+                                      <input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="mm/dd/yyyy" required="">
+                                  </li>
+                                  <li class="">
+                                      <span class="number">4</span>
+                                      <label class="fs-field-label fs-anim-upper" for="q1">End date</label>
+                                      <input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="mm/dd/yyyy" required="">
+                                  </li>
+                              </ol>
+
+                          </form> -->
+                      </div>
+                    </div>
               </div>
             </div>
           </div>

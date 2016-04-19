@@ -9,3 +9,7 @@
         padding: 10px 20px 10px 20px;
     }
 }
+
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+    outline: none;
+}
