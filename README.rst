@@ -1,0 +1,1 @@
+### DEMOKRATY (Vote via text)
