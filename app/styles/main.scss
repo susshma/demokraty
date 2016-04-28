@@ -52,6 +52,9 @@ body {
         line-height: 40px;
         padding-bottom: 19px;
         height: 70px;
+        color: #fc5a5d;
+        font-weight: bold;
+        font-size: 35px;
     }
     .logo {
         background-image: url("/images/logo.png");
@@ -113,12 +116,17 @@ body {
             height: 150px;
             width: 150px;
             border-radius:75px;
+            .small_text {
+                font-size: 14px;
+            }
 
             .vote {
-                font-size: 30px;
-                margin-top: 28%;
+                font-size: 25px;
+                margin-top: 23%;
                 text-align: center;
                 line-height: 25px;
+                font-weight: bold;
+                text-shadow: -1px 1px 1px rgba(0,0,0,0.3)
             }
         }
 
@@ -144,6 +152,7 @@ body {
             text-align: center;
             border-right: 1px solid #EEEEEE;
             margin-top: 10px;
+            min-height: 125px;
 
             &:last-child {
                 border-right: none;
@@ -190,6 +199,9 @@ body {
     margin-right: 10px;
 }
 
+hr {
+    border-top: 1px solid #e5e5e5;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {

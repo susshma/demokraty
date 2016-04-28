@@ -70,7 +70,7 @@ var PollForm = React.createClass({
         state: "active",
         phonenumber: ""
     };
-
+    $("#myModal").modal('hide');
     var firebaseRefs = new Firebase(firebaseUrl);
     this.refs.name.value = '';
     this.refs.option1.value = '';
@@ -137,12 +137,15 @@ var Poll = React.createClass({
               <div className="content">
                   <div className="col-lg-4">
                       <div className="full-circle">
-                          <p className="vote">{total_votes} {this.props.id}</p>
+                            <p className="vote">
+                                <span className="small_text">Voting code</span><br/>
+                                {this.props.id}
+                            </p>
                       </div>
                   </div>
                   <div className="col-lg-8">
                       <div className="question">
-                            {this.props.name} ?
+                            {this.props.name} 
                       </div>
                       {statsNodes}
                   </div>

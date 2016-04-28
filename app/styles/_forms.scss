@@ -59,4 +59,17 @@ input::placeholder {
     li {
         margin-bottom: 20px;
     }
+
+    &.large {
+        li {
+            font-size: 30px;
+
+            .number {
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+            }
+        }
+
+    }
 }

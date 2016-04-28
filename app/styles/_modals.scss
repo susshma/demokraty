@@ -1,6 +1,7 @@
 .modal.fade .modal-dialog {
     transform: scale(0.8);
     transition: transform 0.3s ease-out;
+    margin-top: 30px;
 }
 
 .modal.in .modal-dialog {
@@ -13,7 +14,7 @@
     border: none;
     border-radius: 0px;
     box-shadow: none;
-    margin: 40px auto;
+    margin: 90px auto;
 }
 
 .modal-dialog {
