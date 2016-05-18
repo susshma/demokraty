@@ -43,10 +43,10 @@
     "node": ">=0.10.0"
   },
   "scripts": {
+    "gulp": "node_modules/gulp-cli/bin/gulp.js",
     "start": "node app",
-    "postinstall": "gulp default",
-    "test": "jest",
-    "gulp": "gulp"
+    "postinstall": "npm run gulp default",
+    "test": "jest"
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/preprocessor.js",
