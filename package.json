@@ -45,7 +45,7 @@
   "scripts": {
     "gulp": "node_modules/gulp/bin/gulp.js",
     "start": "node app",
-    "postinstall": "npm run gulp default",
+    "postinstall": "npm run gulp build",
     "test": "jest"
   },
   "jest": {
