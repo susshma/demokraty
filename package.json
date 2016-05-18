@@ -47,7 +47,6 @@
     "postinstall": "gulp default",
     "test": "jest",
     "gulp": "gulp"
-}
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/preprocessor.js",
