@@ -202,3 +202,11 @@ gulp.task('build', ['html', 'buildBundle', 'images', 'fonts', 'extras'], functio
 
 // Default task
 gulp.task('default', ['clean', 'build']);
+
+gulp.task('serveprod', function() {
+  connect.server({
+    root: 'dist/scripts/app.js',
+    port: process.env.PORT || 5000, // localhost:5000
+    livereload: false
+  });
+});
