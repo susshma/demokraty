@@ -43,7 +43,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "gulp": "gulp"
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/preprocessor.js",
