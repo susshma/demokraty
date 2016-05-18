@@ -3,7 +3,7 @@ input[type=text] {
     border: 0;
     width: calc(100% - 1px);
     border-bottom: 1px solid #ddd;
-    transition: border-bottom 0.3s;
+    transition: border-bottom 0.5s ease-in;
     padding-left: 10px;
     background: transparent;
     outline: none;

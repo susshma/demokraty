@@ -1,4 +1,5 @@
 $icon-font-path: "../fonts/";
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300,200,100);
 
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
 @import "_buttons.scss";
@@ -30,7 +31,8 @@ body {
     padding-bottom: 20px;
     color: #66615b;
     background: #F6F6F6;
-    font-family: Grilli;
+    // font-family: Grilli;
+    font-family: Raleway;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -126,7 +128,6 @@ body {
                 text-align: center;
                 line-height: 25px;
                 font-weight: bold;
-                text-shadow: -1px 1px 1px rgba(0,0,0,0.3)
             }
         }
 
@@ -134,15 +135,15 @@ body {
             font-size: 20px;
             border-bottom: #EEEEEE solid 1px;
 
-            // &:after {
-            //     content: " ";
-            //     width: 30px;
-            //     height: 2px;
-            //     background: #ee2c40;
-            //     position: absolute;
-            //     bottom: -4px;
-            //     left: 15px;
-            // }
+            &:after {
+                content: " ";
+                width: 30px;
+                height: 2px;
+                background: #ee2c40;
+                position: absolute;
+                bottom: -4px;
+                left: 15px;
+            }
         }
 
         .stats {
