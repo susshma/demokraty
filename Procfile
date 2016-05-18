@@ -1,1 +1,1 @@
-web: node_modules/gulp/bin/gulp build
+web: node_modules/gulp/bin/gulp watch
