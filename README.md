@@ -1,4 +1,4 @@
-# DEMOKRATY FRONT END
+#### DEMOKRATY FRONT END
 
 1. Front end for sms based voting app
 
