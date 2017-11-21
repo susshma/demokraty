@@ -1,6 +1,8 @@
-#### DEMOKRATY FRONT END
+#### DEMOKRATY Front End application
 
 1. Front end for sms based voting app
+
+#### Run local
 
 #### Tech Stack
 
