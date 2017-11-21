@@ -1,4 +1,5 @@
-#### DEMOKRATY (Vote via text)
+# DEMOKRATY FRONT END
+
 1. Front end for sms based voting app
 
 #### Tech Stack
