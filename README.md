@@ -2,8 +2,6 @@
 
 1. Front end for sms based voting app
 
-#### Run local
-
 #### Tech Stack
 
 1. React
